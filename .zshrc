@@ -22,7 +22,7 @@ antigen bundle zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
-antigen theme robbyrussell
+antigen theme philips
 antigen apply
 
 alias cpv="rsync -avhP"
