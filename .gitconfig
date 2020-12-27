@@ -1,0 +1,24 @@
+[alias]
+        a = add
+        ap = app -p
+        ac = !git add . && git commit -am
+        
+	s = status -s -b
+	ss = status
+	
+	d = diff
+	ds = diff --staged
+	dstat = diff --stat --staged
+	
+	co = checkout
+	
+	ci = commit -m
+	c = commit -v
+	pom = push origin master
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg3 = log --pretty=format:%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=short
+	lg = !git lg1
+[user]
+	email = 
+	name = Hannes Hilbert
