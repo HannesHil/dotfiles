@@ -25,9 +25,4 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen theme philips
 antigen apply
 
-alias cpv="rsync -avhP"
-alias dpsa="docker ps -a --format 'table {{.Image}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
-alias dotfiles='/usr/bin/git --git-dir=/home/hannes/.dotfiles --work-tree=/home/hannes'
-
-alias dig='echo "You want to use drill instead"'
-alias nslookup='echo "You want to use drill instead"'
+[[ -a $HOME/.aliases ]] && source $HOME/.aliases
