@@ -6,4 +6,5 @@ rm README.md
 cp -r . ../
 cd ..
 mv .git .dotfiles
-rm -rf dotfiles```
+rm -rf dotfiles
+```
