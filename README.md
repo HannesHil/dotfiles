@@ -8,3 +8,5 @@ cd ..
 mv .git .dotfiles
 rm -rf dotfiles
 ```
+
+Needs zsh-antigen, see https://github.com/zsh-users/antigen/wiki/Installation
