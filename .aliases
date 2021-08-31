@@ -4,6 +4,9 @@ alias dotfiles='/usr/bin/git --git-dir=/home/hannes/.dotfiles --work-tree=/home/
 
 alias dig='echo "You want to use drill instead"'
 alias nslookup='echo "You want to use drill instead"'
+alias gcd='git checkout dev'
+alias gci='g ci'
+alias glg='g lg'
 
 alias shutup='sudo shutdown now'
 alias sudo='sudo '
