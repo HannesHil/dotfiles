@@ -7,6 +7,6 @@ alias nslookup='echo "You want to use drill instead"'
 alias gcd='git checkout dev'
 alias gci='g ci'
 alias glg='g lg'
-
+alias grmb='git branch -vv | grep ": gone]"|  grep -v "\*" | awk "{ print $1; }" | xargs -r git branch -d'
 alias shutup='sudo shutdown now'
 alias sudo='sudo '
