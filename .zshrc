@@ -16,6 +16,7 @@ antigen bundle docker
 antigen bundle rsync
 antigen bundle command-not-found
 antigen bundle sudo
+antigen bundle golang
 antigen bundle systemd
 antigen bundle docker-compose
 antigen bundle zsh-users/zsh-autosuggestions
