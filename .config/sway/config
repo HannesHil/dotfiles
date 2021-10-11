@@ -1,11 +1,10 @@
-# Default config for sway
 #
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
+## visual configuration
+##
 
-### Variables
-#
+font JetBrains Mono 11
+smart_borders on
+
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -68,9 +67,57 @@ input * xkb_layout "de"
 bindswitch --locked lid:on output $display_laptop disable
 bindswitch --locked lid:off output $display_laptop enable
 
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
+#############################
+# mark x11
+#############################
+
+for_window [shell=".*"] title_format "%title :: %shell"
+
+#############################
+# brightness
+#############################
+
+bindsym XF86MonBrightnessDown exec brightnessctl -d amdgpu_bl0 set -- -10%
+bindsym XF86MonBrightnessUp   exec brightnessctl -d amdgpu_bl0 set -- +10%
+
+#############################
+# volume control
+#############################
+
+set $pa_volume pactl set-sink-volume @DEFAULT_SINK@
+set $pa_mute pactl set-sink-mute @DEFAULT_SINK@
+set $pa_mik_mute pactl set-source-mute @DEFAULT_SOURCE@
+set $audio Audio [←]-5% [→]+5% [↓]source [↑]sink
+bindsym XF86AudioMute        exec $pa_mute toggle
+bindsym XF86AudioLowerVolume exec $pa_volume -5%
+bindsym XF86AudioRaiseVolume exec $pa_volume +5%
+bindsym XF86AudioMicMute     exec $pa_mik_mute toggle
+bindsym $mod+z mode "$audio"
+mode "$audio" {
+	bindsym $left exec $pa_volume -5%
+	bindsym Left  exec $pa_volume -5%
+
+	bindsym $right exec $pa_volume +5%
+	bindsym Right  exec $pa_volume +5%
+
+	bindsym $up exec $pa_mute toggle
+	bindsym Up  exec $pa_mute toggle
+
+	bindsym $down exec exec $pa_mik_mute toggle
+	bindsym Down  exec exec $pa_mik_mute toggle
+
+	bindsym Escape mode default
+	bindsym Return mode default
+}
+
+#############################
+# sway bar config
+#############################
+
+bar 0 {
+	status_command i3status -c ~/.config/i3status/status.conf
+	height 24
+}
 
 ### Key bindings
 #
