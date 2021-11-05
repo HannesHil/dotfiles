@@ -18,6 +18,8 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
+exec_always pkill kanshi; exec kanshi
+
 
 ### Output configuration
 #
@@ -261,5 +263,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+bindsym $mod+CTRL+l exec /home/hannes/bin/lock
 
 include @sysconfdir@/sway/config.d/*

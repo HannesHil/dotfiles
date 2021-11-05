@@ -28,6 +28,9 @@ antigen theme philips
 antigen apply
 
 [[ -a $HOME/.aliases ]] && source $HOME/.aliases
+[[ -a $HOME/bin ]] && export PATH=/home/hannes/bin:$PATH
+[[ -a $HOME/go ]] && export GOPATH=~/go && export PATH=$PATH:$GOPATH/bin
+
 
 ### from https://gist.github.com/magicdude4eva/2d4748f8ef3e6bf7b1591964c201c1ab 
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh

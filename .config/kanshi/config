@@ -1,0 +1,14 @@
+profile {
+	output eDP-1 enable scale 1
+}
+
+
+profile {
+        output "Dell Inc. DELL S2721HS 7LB0223" mode 1920x1080@60.000Hz position 0,0
+	output eDP-1 mode 1920x1080@60.033Hz position 0,1080
+}
+
+profile {
+        output DP-1 mode 2560x1440@59.951Hz position 0,0
+	output eDP-1 mode 1920x1080@60.033Hz position 320,1440
+}
