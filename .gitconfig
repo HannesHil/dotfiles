@@ -24,3 +24,9 @@
 	name = Hannes Hilbert
 [init]
 	defaultBranch = main
+
+[includeIf "gitdir:~/iProject/"]
+	path = ~/iProject/.gitconfig
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
