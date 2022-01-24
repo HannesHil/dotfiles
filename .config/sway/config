@@ -21,6 +21,9 @@ for_window [app_id="telegramdesktop"] move container to workspace 10
 
 output * bg Sway_Wallpaper_Blue_1920x1080.png fill
 
+for_window [class="."] inhibit_idle fullscreen
+for_window [app_id="."] inhibit_idle fullscreen
+
 exec swayidle -w \
           timeout 120 'exec /home/hannes/bin/lock2 &' \
 #          timeout 240 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
@@ -94,7 +97,11 @@ mode "$audio" {
 
 bar {
 	swaybar_command waybar 
-        #i3status -c ~/.config/i3status/status.conf
+	position top
+	hidden_state hide
+	mode hide
+	modifier Mod4	
+	#i3status -c ~/.config/i3status/status.conf
 }
 
 #############################
