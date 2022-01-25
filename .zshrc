@@ -6,6 +6,8 @@ HIST_STAMPS="%d/%m/%y %T"
 HYPHEN_INSENSITIVE="true"
 export EDITOR='vim'
 
+export PATH=/home/hannes/.local/bin:$PATH
+
 ### antigen - loads zsh plugin and such
 [[ -a /usr/share/zsh-antigen/antigen.zsh ]] && source /usr/share/zsh-antigen/antigen.zsh
 [[ -a /usr/share/zsh/share/antigen.zsh ]] && source /usr/share/zsh/share/antigen.zsh
