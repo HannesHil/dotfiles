@@ -1,0 +1,14 @@
+swaylock \
+        --screenshots \
+        --clock \
+        --datestr "%e.%m.%Y" \
+        --indicator \
+        --indicator-radius 100 \
+        --indicator-thickness 7 \
+        --effect-blur 3x3 \
+        --effect-vignette 1:1 \
+        --ring-color bb00cc \
+        --key-hl-color 880033 \
+        --line-color 00000000 \
+        --inside-color 00000088 \
+        --separator-color 00000000 \ $1
