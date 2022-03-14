@@ -12,7 +12,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["idle_inhibitor", "custom/gammastep", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "clock", "tray"],
+    "modules-right": ["idle_inhibitor", "custom/redshift", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -160,12 +160,12 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py",
         "on-click": "exec playerctl play-pause"
     },
-    "custom/gammastep": {
+    "custom/redshift": {
         "format": "{}",
         "interval": 5,
         "on-update": "",
-        "exec": "sleep 0.05; $HOME/.config/waybar/gammastep.sh",
-        "on-click": "$HOME/.config/waybar/gammastep.sh toggle"
+        "exec": "sleep 0.05; $HOME/.config/waybar/wlsunset.sh",
+        "on-click": "$HOME/.config/waybar/wlsunset.sh toggle"
     }
 }
 
