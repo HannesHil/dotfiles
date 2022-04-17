@@ -22,6 +22,7 @@
 [user]
 	email = git@hsht.de
 	name = Hannes Hilbert
+	signingkey = 425DD8018B6B6BB7859DF6223DA0F3AD6F604D5E
 [init]
 	defaultBranch = main
 
