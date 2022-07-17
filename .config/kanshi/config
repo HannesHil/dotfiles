@@ -13,8 +13,24 @@ profile {
 	output eDP-1 mode 1920x1080@60.033Hz position 320,1440
 }
 
+#Home setup
 profile {
-        output DP-1  mode 1920x1080@60.000Hz position 0,0
-        output eDP-1 mode 1920x1080@60.033Hz position 0,1080
-        output HDMI-A-1 mode 1920x1080@60.000Hz position 1920,0
+        output "Unknown 2360 BCWE19A000528"  mode 1920x1080@60.000Hz position 0,0
+        output "Unknown 0x573D 0x00000000" disable
+        output "Unknown 2360 ACNE99A003752" mode 1920x1080@60.000Hz position 1920,0
+}
+
+#iSetup kev
+profile {
+       output "Unknown 0x573D 0x00000000" disable
+       output "Dell Inc. DELL U2412M 0FFXD43E324S" mode 1920x1080@60.000Hz position 1920,0
+       output "Dell Inc. DELL U2412M Y1H5T2B304UL" mode 1920x1080@60.000Hz position 0,0
+}
+
+
+#iSetup rechen
+profile {
+       output "Unknown 0x573D 0x00000000" disable
+       output "Dell Inc. DELL U2412M 4RFMK58M3V6L" mode 1920x1080@60.000Hz position 1920,0
+       output "Dell Inc. DELL U2412M 0FFXD51Q13GS" mode 1920x1080@60.000Hz position 0,0
 }

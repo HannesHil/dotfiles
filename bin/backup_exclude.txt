@@ -1,0 +1,9 @@
+.cache/
+go/
+.conda/
+.cargo/
+.mozilla/
+.config/chromium/
+.config/Slack/
+.config/Code - OSS/
+.local/share/containers/
