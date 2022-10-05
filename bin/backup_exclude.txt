@@ -7,3 +7,7 @@ go/
 .config/Slack/
 .config/Code - OSS/
 .local/share/containers/
+.kube/
+.npm/
+.asdf/
+

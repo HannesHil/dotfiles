@@ -11,3 +11,4 @@ alias grmb='git branch -vv | grep ": gone]"|  grep -v "\*" | awk "{ print $1; }"
 alias shutup='sudo shutdown now'
 alias sudo='sudo '
 alias k='kubectl '
+alias 'docker compose'='podman-compose'
