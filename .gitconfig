@@ -29,8 +29,11 @@
 [includeIf "gitdir:~/iProject/"]
 	path = ~/iProject/.gitconfig
 
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+[includeIf "gitdir:~/mProject/"]
+	path = ~/mProject/.gitconfig
+
+#[url "ssh://git@github.com/"]
+#	insteadOf = https://github.com/
 
 [url "https://github.com/rust-lang/crates.io-index"]
         insteadOf = https://github.com/rust-lang/crates.io-index

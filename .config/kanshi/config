@@ -39,3 +39,10 @@ profile {
        output "Dell Inc. DELL U2412M 4RFMK58M3V6L" mode 1920x1080@60.000Hz position 1920,0
        output "Dell Inc. DELL U2412M 0FFXD51Q13GS" mode 1920x1080@60.000Hz position 0,0
 }
+
+#inovex arnold
+profile {
+        output "Unknown 0x573D 0x00000000" disable
+        output "Philips Consumer Electronics Company PHL 258B6QU UHB1949004215"  mode 2560x1440@59.951Hz position 0,0
+        output "Samsung Electric Company S24C650 HTMF401731" mode 1920x1200@59.950Hz position 2560,0
+}
