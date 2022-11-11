@@ -46,3 +46,10 @@ profile {
         output "Philips Consumer Electronics Company PHL 258B6QU UHB1949004215"  mode 2560x1440@59.951Hz position 0,0
         output "Samsung Electric Company S24C650 HTMF401731" mode 1920x1200@59.950Hz position 2560,0
 }
+
+profile {
+        output "Unknown 0x573D 0x00000000" disable
+        output "Philips Consumer Electronics Company PHL 258B6QU UHB1949004052"  mode 2560x1440@59.951Hz position 0,0
+        output "Samsung Electric Company S24C650 H4MG201810" mode 1920x1200@59.950Hz position 2560,0
+}
+
