@@ -107,6 +107,11 @@ window#waybar.chromium {
     color: #000000;
 }
 
+#bluetooth{
+    background-color: #3F51B5;
+    color: #ffffff;
+}
+
 #battery.charging, #battery.plugged {
     color: #ffffff;
     background-color: #26A65B;
