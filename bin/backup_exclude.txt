@@ -1,33 +1,26 @@
 $HOME/.cache/
-$HOME/go/
-$HOME/.conda/
-$HOME/.cargo/
+$HOME/.local/
+
 $HOME/.config/chromium/
 $HOME/.config/Code - OSS/
 $HOME/.config/discord/
 $HOME/.config/Microsoft/
 $HOME/.config/teams/
 $HOME/.config/Signal/
+$HOME/.config/Spotify/
 $HOME/.config/Slack/
-$HOME/.local/share/containers/
-$HOME/.kube/
-$HOME/.npm/
-$HOME/.asdf/
-$HOME/node_modules/
+$HOME/.config/StorageExplorer/
+
 
 $HOME/NoBackup/*
-$HOME/Dropbox/*
+$HOME/.ecryptfs/
+$HOME/.gvfs/
 
-$HOME/.ecryptfs
-$HOME/.Private
-$HOME/.gvfs
-$HOME/.local/share/gvfs-metadata
-$HOME/.dbus
-$HOME/.Trash
-$HOME/.local/share/Trash
-$HOME/.cddb
-$HOME/.aptitude
-$HOME/.bash_history
+$HOME/.dbus/
+$HOME/.cddb/
+$HOME/.aptitude/
+$HOME/.vscode-oss/extensions
+$HOME/.mozilla/
 
 ###############################################
 # Directories, probably not worth a backup    #
@@ -75,41 +68,6 @@ $HOME/.kde/share/apps/okular/docdata
 $HOME/.kde/share/apps/gwenview/recentfolders
 $HOME/.kde/share/apps/kmess/displaypics
 $HOME/.kde/share/apps/kmess/customemoticons
-
-# Firefox
-$HOME/.mozilla/firefox/*/storage
-$HOME/.mozilla/firefox/*/Cache
-# in case Fx crashes dumps will be stored in this
-$HOME/.mozilla/firefox/*/minidumps
-# session-specific
-$HOME/.mozilla/firefox/*/.parentlock
-# phishing database, recreated
-$HOME/.mozilla/firefox/*/urlclassifier3.sqlite
-# blacklisted extensions
-$HOME/.mozilla/firefox/*/blocklist.xml
-# extension database, recreated on startup
-$HOME/.mozilla/firefox/*/extensions.sqlite
-$HOME/.mozilla/firefox/*/extensions.sqlite-journal
-$HOME/.mozilla/firefox/*/extensions.rdf
-$HOME/.mozilla/firefox/*/extensions.ini
-$HOME/.mozilla/firefox/*/extensions.cache
-# cached UI data, recreated
-$HOME/.mozilla/firefox/*/XUL.mfasl
-$HOME/.mozilla/firefox/*/XPC.mfasl
-$HOME/.mozilla/firefox/*/xpti.dat
-$HOME/.mozilla/firefox/*/compreg.dat
-# cached plugin data, recreated
-$HOME/.mozilla/firefox/*/pluginreg.dat
-
-# Opera
-$HOME/.opera/temporary_downloads
-$HOME/.opera/cache
-$HOME/.opera/thumbnails
-$HOME/.opera/opcache
-$HOME/.opera/icons
-$HOME/.opera/application_cache
-$HOME/.opera/widgets/*/cache
-$HOME/.opera/lock
 
 # GnuPG
 $HOME/.gnupg/rnd
@@ -182,3 +140,12 @@ $HOME/.venv-py3
 
 # Terraform
 */.terraform/
+
+$HOME/go/
+$HOME/.conda/
+$HOME/.cargo/
+$HOME/.nuget/
+$HOME/.kube/
+$HOME/.npm/
+$HOME/.asdf/
+$HOME/node_modules/
