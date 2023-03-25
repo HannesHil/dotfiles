@@ -123,9 +123,11 @@
         "on-click": "exec playerctl play-pause"
     },
     "custom/redshift": {
-        "format": "{}",
+        "format": "{icon}",
         "interval": 5,
         "on-update": "",
+        "return-type": "json",
+        "format-icons": ["",""],
         "exec": "sleep 0.05; $HOME/.config/waybar/wlsunset.sh",
         "on-click": "$HOME/.config/waybar/wlsunset.sh toggle"
     },

@@ -11,7 +11,7 @@ if [[ $1 = "toggle" ]]; then
 fi
 
 if pgrep -x "wlsunset" > /dev/null; then
-	echo ""
+	echo '{"tooltip": "redshift enabled", "class": "enabled","percentage":100}'
 else
-	echo ""
+	echo '{"tooltip": "redshift disabled", "class": "disabled", "percentage":0}'
 fi

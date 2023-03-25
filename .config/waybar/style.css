@@ -6,7 +6,7 @@
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    /* border-bottom: 2px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -16,17 +16,8 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-    background-color: #3F3F3F;
+window#waybar.Alacritty {
+    background-color: #1D1F21;
 }
 
 window#waybar.chromium {
@@ -77,10 +68,18 @@ window#waybar.chromium {
 #custom-media,
 #tray,
 #mode,
-#idle_inhibitor,
+#bluetooth,
+#custom-vpn,
 #mpd {
-    padding: 0 10px;
-    color: #ffffff;
+    padding: 0 8px;
+    margin: 0 0px;
+}
+
+#language,
+#idle_inhibitor,
+#custom-redshift {
+    padding: 0 5px;
+    margin: 0 0px;
 }
 
 #window,
@@ -89,12 +88,12 @@ window#waybar.chromium {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
@@ -107,12 +106,13 @@ window#waybar.chromium {
     color: #000000;
 }
 
-#bluetooth{
+#bluetooth {
     background-color: #3F51B5;
     color: #ffffff;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     color: #ffffff;
     background-color: #26A65B;
 }
@@ -166,12 +166,27 @@ label:focus {
 #network.disabled {
     background-color: #f53c3c;
 }
+
 #custom-vpn {
     color: #FFFFFF;
 }
 
 #custom-redshift {
-   color: #FFFFFF;
+    background-color: #0096FF;
+    color: #FFFFFF;
+}
+
+#custom-redshift {
+    color: #FFFFFF;
+}
+
+#custom-redshift.enabled {
+    background-color: #4b006c;
+}
+
+#custom-redshift.disabled {
+    background-color: #0096FF;
+    color: #FFFFFF;
 }
 
 #pulseaudio {
@@ -210,11 +225,11 @@ label:focus {
     background-color: #2980b9;
 }
 
-#tray > .passive {
+#tray>.passive {
     -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
@@ -247,24 +262,6 @@ label:focus {
 
 #language {
     background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
     color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
     min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
 }

@@ -21,10 +21,10 @@ antigen bundle sudo
 antigen bundle golang
 antigen bundle systemd
 antigen bundle docker-compose
+antigen bundle 3v1n0/zsh-bash-completions-fallback
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle esc/conda-zsh-completion
 
 antigen theme philips
 antigen apply
@@ -46,4 +46,15 @@ pastefinish() {
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 ### Fix slowness of pastes
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+function tf_prompt_info() {
+    # dont show 'default' workspace in home dir
+    [[ "$PWD" == ~ ]] && return
+    # check if in terraform dir
+    if [[ -d .terraform && -r .terraform/environment  ]]; then
+      workspace=$(cat .terraform/environment) || return
+      echo "[${workspace}]"
+    fi
+}
+
+PROMPT=$'%{$fg[magenta]%}$(tf_prompt_info)%{$reset_color%} '$PROMPT
