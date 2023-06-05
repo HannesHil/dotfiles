@@ -58,3 +58,4 @@ function tf_prompt_info() {
 }
 
 PROMPT=$'%{$fg[magenta]%}$(tf_prompt_info)%{$reset_color%} '$PROMPT
+eval "$(/usr/bin/rtx activate zsh)"

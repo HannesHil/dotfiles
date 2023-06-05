@@ -26,14 +26,16 @@
 [init]
 	defaultBranch = main
 
-[includeIf "gitdir:~/iProject/"]
-	path = ~/iProject/.gitconfig
-
-[includeIf "gitdir:~/mProject/"]
-	path = ~/mProject/.gitconfig
+[include]
+    path = ~/Documents/idata/.gitconfig
 
 #[url "ssh://git@github.com/"]
 #	insteadOf = https://github.com/
 
 [url "https://github.com/rust-lang/crates.io-index"]
         insteadOf = https://github.com/rust-lang/crates.io-index
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
