@@ -141,6 +141,9 @@ $HOME/.venv-py3
 # Terraform
 */.terraform/
 
+# Java Script
+*/node_modules/
+
 $HOME/go/
 $HOME/.conda/
 $HOME/.cargo/
@@ -149,3 +152,4 @@ $HOME/.kube/
 $HOME/.npm/
 $HOME/.asdf/
 $HOME/node_modules/
+$HOME/.azure/

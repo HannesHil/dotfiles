@@ -7,5 +7,5 @@ read ans
 [ $ans = "y" ] && rm -rf $fx
 }}
 # use '<delete>' key for either 'trash' or 'delete' command
-map <delete> trash
+map <delete> delete
 map <f-8> delete
