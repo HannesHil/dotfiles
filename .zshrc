@@ -4,7 +4,7 @@ bindkey -v
 ENABLE_CORRECTION="true"
 HIST_STAMPS="%d/%m/%y %T"
 HYPHEN_INSENSITIVE="true"
-export EDITOR='vim'
+export EDITOR='nvim'
 
 export PATH=/home/hannes/.local/bin:$PATH
 
@@ -59,3 +59,4 @@ function tf_prompt_info() {
 
 PROMPT=$'%{$fg[magenta]%}$(tf_prompt_info)%{$reset_color%} '$PROMPT
 eval "$(/usr/bin/rtx activate zsh)"
+eval "$(direnv hook zsh)"
